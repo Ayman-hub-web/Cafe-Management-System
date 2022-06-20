@@ -1,0 +1,18 @@
+<mat-card class="my-card">
+    <mat-spinner *ngIf="progress"></mat-spinner>
+    <mat-card-header color="accent">
+        <span>{{BTN}} Category</span>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="add()">
+
+            <mat-form-field class="full-width">
+                <mat-label>Category</mat-label>
+                <input matInput placeholder="Category Name" name="name" formControlName="name">
+            </mat-form-field>
+            <mat-card-actions>
+                <button mat-raised-button color="accent" type="submit">{{BTN}}</button>
+            </mat-card-actions>
+        </form>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,32 @@
+mat-sidenav {
+    background: #262d31;
+    color: white;
+    width: 230px;
+    height: 100%;
+}
+
+mat-sidenav-content {
+    height: 100vh;
+    background: rgb(238, 243, 243);
+    .main {
+        padding: 32px;
+    }
+}
+
+mat-toolbar {
+    background: #3f51b5;
+    mat-icon {
+        margin-left: 16px;
+        color: #f9fafc;
+    }
+    justify-content: space-between;
+    .box {
+        margin-top: 16px;
+    }
+}
+
+@media(max-width:1000px) {
+    mat-card {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,49 @@
+<mat-sidenav-container>
+    <mat-sidenav mode='side' #sidenav opened>
+        <app-side color="accent"></app-side>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <div class="toolbar">
+                <mat-toolbar color="accent">
+                    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+                    <h2>Cafe Management System</h2>
+                    <div class="box">
+                        <mat-icon>search</mat-icon>
+                        <mat-icon>bookmark</mat-icon>
+                        <mat-icon>email</mat-icon>
+                    </div>
+                </mat-toolbar>
+            </div>
+            <div class="main">
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <mat-card class="text-center">
+                            <h2>Categories</h2>
+                            <h2>{{catLength}}</h2>
+                        </mat-card>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-card class="text-center">
+                            <h2>Users</h2>
+                            <h2>{{users.length}}</h2>
+                        </mat-card>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-card class="text-center">
+                            <h2>Items</h2>
+                            <h2>{{menu.length}}</h2>
+                        </mat-card>
+                    </div>
+                    <div class="col-md-3">
+                        <mat-card class="text-center">
+                            <h2>Orders</h2>
+                            <h2>{{orderLength}}</h2>
+                        </mat-card>
+                    </div>
+                </div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

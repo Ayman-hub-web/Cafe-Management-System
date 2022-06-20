@@ -1,0 +1,4 @@
+Wenn man ein Projekt herunterlädt und die nodejs version kleiner ist als die akuelle,
+füht man folgendes Kommando aus:
+set NODE_OPTIONS=--openssl-legacy-provider 
+dann kann man normal mit ng serve die Appl starten

@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-spinner *ngIf="progress"></mat-spinner>
+    <div class="row">
+        <div class="col-md-12">
+            <button mat-raised-button class="BackColor" (click)="addCategory()"><mat-icon>add</mat-icon>Add Category</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cat of categories; let i= index">
+                <td>{{cat.id}}</td>
+                <td>{{cat.name}}</td>
+                <td *ngIf="cat.id">
+                    <mat-slide-toggle (click)="onToggle(cat.id)" [checked]="cat.status" class="example-margin" color="success" [checked]="cat.status" [disabled]="false">
+                    </mat-slide-toggle>
+                    <mat-icon color="primary" style="font-size:20px" (click)="edit(cat)">edit</mat-icon>
+                    <mat-icon color="warn" style="font-size:20px" (click)="delete(cat.id)">delete</mat-icon>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</mat-card>

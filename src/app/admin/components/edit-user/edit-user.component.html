@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Update User</h1>
+<div mat-dialog-content>
+    <form [formGroup]="form" (ngSubmit)="updateUser()">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="name" placeholder="User Name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="User Email" formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="User Password" formControlName="password">
+        </mat-form-field>
+
+        <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="primary" type="submit" class="mx-2" [disabled]="!form.valid">Update</button>
+            <button mat-raised-button mat-dialog-close color="warn">Cancel</button>
+        </div>
+    </form>
+</div>

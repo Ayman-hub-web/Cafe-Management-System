@@ -1,0 +1,30 @@
+<mat-card-content>
+    <mat-spinner *ngIf="progress"></mat-spinner>
+    <mat-card-header color="accent">
+        <span>{{BTN}} Product</span>
+    </mat-card-header>
+    <form [formGroup]="form" (ngSubmit)="add()">
+
+        <mat-form-field class="full-width">
+            <mat-label>Item</mat-label>
+            <input matInput placeholder="Product Name" name="item" formControlName="item">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Price</mat-label>
+            <input matInput placeholder="Product Price" name="price" formControlName="price">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Category</mat-label>
+            <mat-select placeholder="Category" formControlName="category">
+                <mat-option [value]="element && element.category == cat.name? element.category : cat.name" *ngFor="let cat of categories">{{cat.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="primary" type="submit" class="mx-2" [disabled]="form.invalid">{{BTN}}</button>
+            <button mat-raised-button mat-dialog-close color="warn">Cancel</button>
+        </div>
+    </form>
+</mat-card-content>

@@ -1,0 +1,61 @@
+<div class="container">
+    <mat-spinner *ngIf="progress"></mat-spinner>
+
+    <mat-card>
+        <mat-card-header color="primary">
+            <span>New Order</span>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="myForm" (ngSubmit)="add()">
+                <div class="row">
+                    <div class="col-md-6">
+                        <mat-form-field class="full-width">
+                            <mat-label>Item</mat-label>
+                            <mat-select [(value)]="selected" formControlName="menuItem">
+                                <mat-option value="Choose">Choose one Item</mat-option>
+                                <mat-option *ngFor="let men of menu" value="{{men.item}}" (click)="getPrice(men.id)">{{men.item}}
+                                </mat-option>
+                                <input type="text">
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-6">
+                        <mat-form-field class="full-width">
+                            <mat-label>User</mat-label>
+                            <input matInput type="text" formControlName="user">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <mat-form-field class="full-width">
+                            <mat-label>Number of Items</mat-label>
+                            <input matInput placeholder="number of items" type="number" [(ngModel)]="amount" min="1" formControlName="amount" (click)="changePrice(amount)">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-6">
+                        <mat-form-field class="full-width">
+                            <mat-label>Payments</mat-label>
+                            <mat-select selected formControlName="payment">
+                                <mat-option value="Chose">Choose one Payment Method</mat-option>
+                                <mat-option *ngFor="let pay of payMethods" value="{{pay.name}}">{{pay.name}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="rwo" *ngIf="choose">
+                    <div class="col-md-6">
+                        <mat-form-field class="full-width">
+                            <mat-label>Price</mat-label>
+                            <input matInput type="number" [(ngModel)]="price" formControlName="price">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <mat-card-actions>
+                    <button mat-raised-button color="accent" [disabled]="myForm.invalid">Add Order</button>
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

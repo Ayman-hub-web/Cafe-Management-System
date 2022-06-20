@@ -1,0 +1,50 @@
+<div class="navbar">
+    <div class="top">
+        <mat-icon [inline]='true'>notifications_none</mat-icon>
+    </div>
+    <div class="user text-center">
+        <img src="https://theartistgsm.com/wp-content/uploads/2020/08/admin-settings-male.png" alt="">
+        <h4 class="name">{{user.name}}</h4>
+        <p class="mail">{{user.email}}</p>
+    </div>
+    <div class="menu text-center">
+        <div class="menu-item">
+            <button mat-button class="menu-button" routerLink="admin/orders">
+                    <mat-icon>dashboard</mat-icon>
+                    <span>Dashboard</span>
+                </button>
+            <button mat-button class="menu-button" *ngIf="user.role == 'admin'" routerLink="admin/categories">
+                    <mat-icon>category</mat-icon>
+                    <span>Manage Categories</span>
+                </button>
+            <button mat-button class="menu-button" *ngIf="user.role == 'admin'" routerLink="admin/orders">
+                    <mat-icon>edit_note</mat-icon>
+                    <span>Manage Orders</span>
+                </button>
+            <button mat-button class="menu-button" *ngIf="user.role == 'admin'" routerLink="admin/users">
+                    <mat-icon>supervised_user_circle</mat-icon>
+                    <span>Manage Users</span>
+                </button>
+            <button mat-button class="menu-button" *ngIf="user.role == 'admin'" routerLink="admin/products">
+                    <mat-icon>list</mat-icon>
+                    <span>Manage Products</span>
+                </button>
+            <button mat-button class="menu-button" *ngIf="user.role == 'admin'" routerLink="admin/bill">
+                    <mat-icon>attach_money</mat-icon>
+                    <span>View Bill</span>
+                </button>
+            <button mat-button class="menu-button" (click)="addOrder()" *ngIf="user.role != 'admin'">
+                    <mat-icon>note</mat-icon>
+                    <span>New Order</span>
+                </button>
+            <button mat-button class="menu-button" (click)="logout()">
+                    <mat-icon>logout</mat-icon>
+                    <span>Logout</span>
+                </button>
+            <button mat-button class="menu-button">
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,427 @@
+{
+  "products": [
+    {}
+  ],
+  "users": [
+    {
+      "name": "Ayman",
+      "email": "ayman@gmail.com",
+      "password": "123",
+      "role": "user",
+      "status": true,
+      "confirmPassword": "123",
+      "id": 1
+    },
+    {
+      "name": "Ayman",
+      "email": "ayman@gmail.com",
+      "password": "123",
+      "role": "user",
+      "status": true,
+      "confirmPassword": "123",
+      "id": 2
+    },
+    {
+      "name": "Tamer",
+      "email": "tamer@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "user",
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "JOJO",
+      "email": "jojo@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "user",
+      "status": true,
+      "id": 5
+    },
+    {
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "role": "admin",
+      "status": true,
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "name": "Hot Drinks",
+      "status": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Cold Drinks",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Food",
+      "status": true
+    },
+    {
+      "name": "Fast Food",
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "German",
+      "status": true,
+      "id": 5
+    }
+  ],
+  "pay-methods": [
+    {
+      "id": 1,
+      "name": "Cash"
+    },
+    {
+      "id": 1,
+      "name": "Credit Card"
+    },
+    {
+      "id": 1,
+      "name": "Mobile payments"
+    }
+  ],
+  "orders": [
+    {
+      "user": "Ayman",
+      "menuItem": "Tee",
+      "amount": 2,
+      "payment": "Credit Card",
+      "price": 6,
+      "id": 1
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cappuccino",
+      "amount": 1,
+      "payment": "Cash",
+      "price": 6,
+      "id": 2
+    },
+    {
+      "user": "Ayman",
+      "menuItem": "Pasta new",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 11,
+      "id": 3
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Tee",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 3,
+      "id": 4
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cappuccino",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 6,
+      "id": 5
+    },
+    {
+      "user": "JOJO",
+      "menuItem": "Pasta new",
+      "amount": 1,
+      "payment": "Cash",
+      "price": 11,
+      "id": 6
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Pizza",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 16,
+      "id": 7
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cappuccino",
+      "amount": 1,
+      "payment": "Cash",
+      "price": 6,
+      "id": 8
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cappuccino",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 6,
+      "id": 9
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cafe",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 5,
+      "id": 10
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Tee",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 3,
+      "id": 11
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Cappuccino",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 6,
+      "id": 12
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Pasta new",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 11,
+      "id": 13
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Pizza",
+      "amount": 1,
+      "payment": "Mobile payments",
+      "price": 16,
+      "id": 14
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Pizza",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 16,
+      "id": 15
+    },
+    {
+      "user": "Admin",
+      "menuItem": "Tee",
+      "amount": 1,
+      "payment": "Credit Card",
+      "price": 3,
+      "id": 16
+    }
+  ],
+  "bill": [
+    {
+      "username": "Ayman",
+      "email": "ayman@gmail.com",
+      "totalPrice": 6,
+      "payment": "Credit Card",
+      "product": "Tee",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 6,
+      "payment": "Cash",
+      "product": "Cappuccino",
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "username": "Ayman",
+      "email": "ayman@gmail.com",
+      "totalPrice": 11,
+      "payment": "Credit Card",
+      "product": "Pasta new",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 3,
+      "payment": "Credit Card",
+      "product": "Tee",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 6,
+      "payment": "Credit Card",
+      "product": "Cappuccino",
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "username": "JOJO",
+      "email": "jojo@gmail.com",
+      "totalPrice": 11,
+      "payment": "Cash",
+      "product": "Pasta new",
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 16,
+      "payment": "Credit Card",
+      "product": "Pizza",
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 6,
+      "payment": "Cash",
+      "product": "Cappuccino",
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 6,
+      "payment": "Credit Card",
+      "product": "Cappuccino",
+      "userId": 3,
+      "id": 9
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 5,
+      "payment": "Credit Card",
+      "product": "Cafe",
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 3,
+      "payment": "Credit Card",
+      "product": "Tee",
+      "userId": 3,
+      "id": 11
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 6,
+      "payment": "Credit Card",
+      "product": "Cappuccino",
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 11,
+      "payment": "Credit Card",
+      "product": "Pasta new",
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 16,
+      "payment": "Mobile payments",
+      "product": "Pizza",
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 16,
+      "payment": "Credit Card",
+      "product": "Pizza",
+      "userId": 3,
+      "id": 15
+    },
+    {
+      "username": "Admin",
+      "email": "admin@admin.com",
+      "totalPrice": 3,
+      "payment": "Credit Card",
+      "product": "Tee",
+      "userId": 3,
+      "id": 16
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "item": "Cafe",
+      "category": "Hot Drinks",
+      "price": 5,
+      "status": true
+    },
+    {
+      "id": 2,
+      "item": "Tee",
+      "category": "Hot Drinks",
+      "price": 3,
+      "status": true
+    },
+    {
+      "id": 3,
+      "item": "Cappuccino",
+      "category": "Hot Drinks",
+      "price": 6,
+      "status": true
+    },
+    {
+      "id": 4,
+      "item": "Pizza",
+      "category": "Food",
+      "price": 16,
+      "status": true
+    },
+    {
+      "item": "Pasta new",
+      "category": "Food",
+      "price": 11,
+      "status": true,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "item": "Steak",
+      "category": "Food",
+      "price": 16,
+      "status": true
+    },
+    {
+      "item": "Spagetti",
+      "category": "Food",
+      "price": "12",
+      "status": true,
+      "id": 7
+    },
+    {
+      "item": "Eis",
+      "category": "Cold Drinks",
+      "price": "3",
+      "status": true,
+      "id": 8
+    }
+  ]
+}

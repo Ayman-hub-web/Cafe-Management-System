@@ -1,0 +1,22 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav mode='side' #sidenav opened>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <div class="toolbar">
+                <mat-toolbar>
+                    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+                    <div class="box">
+                        <mat-icon>search</mat-icon>
+                        <mat-icon>bookmark</mat-icon>
+                        <mat-icon>email</mat-icon>
+                    </div>
+                </mat-toolbar>
+            </div>
+            <div class="main">
+                main content
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
